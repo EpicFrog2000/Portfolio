@@ -11,7 +11,7 @@ Upewnij się, że masz zainstalowane Node.js oraz npm. Możesz je pobrać ze str
 1. Sklonuj lub pobierz pliki projektu na swój komputer:  
    - Jeśli korzystasz z Git:  
      ```bash
-     git clone https://github.com/username/repo.git
+     git clone https://github.com/EpicFrog2000/Portfolio.git
      ```
    - Jeśli wolisz pobrać pliki ręcznie, kliknij przycisk "Code" na stronie repozytorium i wybierz "Download ZIP". Następnie rozpakuj pobrany plik.
 
