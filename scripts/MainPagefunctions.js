@@ -59,11 +59,12 @@ function AddProjectPanelStuff(){
             <h2>${div.id}</h2>
             <p>To tak trochę z backendu:</p>
             <p>Opis projektu nwm może z githuba. Weź to kurwa zrób co? Plan jest taki: Wejdź sobie na mojego githuba i do repo pododawaj jakieś README.md i z tych README weź tekst do tego opisu idk xd</p>
-            <P>A no i weź lepiej zrób pozycje tych dwóch paneli na które patrzysz żeby były równo położone a nie jakby jakiś pijany student debil po technikum to robił</p> 
+            <p>Jak chcesz zaaktualizować jsona z danymi z githuba to wejdź sobie na /UpdateGitHubJson    Tylko nie spam</p>
             <p>To tak trochę z frontendu</p>
             <p>Dodaj jakieś animacje/przejścia huje luje dzikie węże w momenkie kiedy zmienia się stronę</p>
             <p>Zrób bardziej płynne pokazywanie i chowanie sie navbar bo jakoś tak źle chodzi</p>
-            <p></p>
+            <P>A no i weź lepiej zrób pozycje tych dwóch paneli na które patrzysz żeby były równo położone a nie jakby jakiś pijany student debil po technikum to robił</p> 
+            <p>Jak chcesz sam coś dorobić to rób oc chcesz, tylko żeby wyglądało bo nie za to Ci nie płace o7</p>
             </div>`
             setTimeout(() => {
                 right_panel.style.opacity = "1";
