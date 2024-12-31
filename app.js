@@ -8,6 +8,11 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname,'src', 'views'));
 
 app.use(express.static(path.join(__dirname, '')));
+app.use((req, res, next) => {
+    res.setHeader('Permissions-Policy', 'geolocation=(self), microphone=(), camera=()');
+    next();
+});
+
 
 app.get('/', (req, res) => {
   res.render('layout', { title: 'Home Page', content: 'MainPage' });
@@ -135,5 +140,5 @@ app.use((req, res, next) => {
 
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running`);
 });

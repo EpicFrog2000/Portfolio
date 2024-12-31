@@ -1,9 +1,9 @@
 LoadAllBlogs();
 AppearCards();
 
-function LoadAllBlogs() {
+async function LoadAllBlogs() {
     var pdiv = document.getElementById("Blogi-Div");
-    fetch('http://localhost:8080/blogposts.json')
+    fetch(window.location.protocol + '//' + window.location.host + '/blogposts.json')
       .then(response => {
           if (!response.ok) {
               throw new Error('Network response was not ok: ' + response.statusText);
@@ -42,7 +42,7 @@ function LoadAllBlogs() {
     });
 }
 
-function AppearCards() {
+async function AppearCards() {
     var divs = document.querySelectorAll(".blog_card.card");
     Array.from(divs).forEach((d, index) => {
         d.style.setProperty('opacity', '0', 'important');

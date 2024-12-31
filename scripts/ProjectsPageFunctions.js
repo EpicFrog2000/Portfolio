@@ -3,9 +3,9 @@ setTimeout(() => {
     AppearCards();
 }, 200);
     
-function LoadAllProjects() {
+async function LoadAllProjects() {
     var pdiv = document.getElementById("Projekty-Div");
-    fetch('http://localhost:8080/mygithub.json')
+    fetch(window.location.protocol + '//' + window.location.host + '/mygithub.json')
       .then(response => {
           if (!response.ok) {
               throw new Error('Network response was not ok: ' + response.statusText);
