@@ -92,7 +92,7 @@ function AddProjectPanelStuff(){
 
 
 function SetBlogCardsOnMain() {
-    fetch('http://localhost:8080/blogposts.json')
+    fetch('https://e876-46-170-143-106.ngrok-free.app/blogposts.json')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
